@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - QuestBoard</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); color: #e0e0e0; }
+        header { background: rgba(0,0,0,0.7); padding: 20px; text-align: center; border-bottom: 4px solid #ffd700; }
+        nav { background: #1a1a2e; padding: 15px; text-align: center; }
+        nav a { color: #ffd700; margin: 0 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-shadow: 0 0 8px #ffd700; }
+        .dashboard { max-width: 1000px; margin: 40px auto; background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; border: 2px solid #ffd700; }
+        .progress-bar { background: #333; height: 40px; border-radius: 20px; overflow: hidden; margin: 20px 0; }
+        .progress { background: linear-gradient(to right, #00ff88, #ffd700); height: 100%; width: 75%; text-align: center; line-height: 40px; color: black; font-weight: bold; font-size: 1.2em; }
+        .badges { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 30px 0; }
+        .badge { background: #ffd700; color: #1a1a2e; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3em; box-shadow: 0 0 15px #fff; }
+        footer { background: #000; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="student.html">Student Dashboard</a>
+        <a href="teacher.html">Teacher Dashboard</a>
+        <a href="features.html">Features & Tech</a>
+    </nav>
+
+    <div class="dashboard">
+        <h2>Welcome back, Level 12 Explorer!</h2>
+        <p><strong>XP:</strong> 8,750 / 10,000</p>
+        <div class="progress-bar"><div class="progress">75%</div></div>
+
+        <h3>Active Quest:</h3>
+        <p><strong>🏰 Defeat the Algebra Dragon</strong> (Mathematics Module)</p>
+        <p>Progress: 4/7 challenges completed</p>
+
+        <h3>Your Earned Badges</h3>
+        <div class="badges">
+            <div class="badge">🗡️</div>
+            <div class="badge">🔬</div>
+            <div class="badge">📚</div>
+            <div class="badge">🌟</div>
+            <div class="badge">⚡</div>
+        </div>
+
+        <button onclick="alert('New quest unlocked! Keep going! 🔥')">Continue Quest</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 QuestBoard</p>
+    </footer>
+</body>
+</html>
